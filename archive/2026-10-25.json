@@ -25,7 +25,7 @@
       "trap": "多結果市場，邊加總≠1 時有套利/摩擦。真實結算＝2026-10-26 倫敦頒獎（UEFA）；resolvesAt=market/頒獎日終 ET。12/31→Other 僅備援，勿當 resolvesAt。",
       "note": "24h vol ~$449,881; liq ~$141,683；resolvesAt=預期頒獎窗 2026-10-27T03:59:00Z（典禮 10/26 20:00 GMT）；Other 備援 12/31 僅 trap",
       "resolvesAt": "2026-10-27T03:59:00Z",
-      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by December 31, 2026, 11:59 PM ET → Other.",
       "resolvedBy": "UMA"
     },
     {
@@ -38,7 +38,7 @@
       "trap": "熱度≠得獎概率。真實結算＝2026-10-26 倫敦頒獎；resolvesAt=頒獎日終 ET。12/31→Other 僅備援，勿當 resolvesAt。",
       "note": "price=mid of bestBid 0.166 / bestAsk 0.171（gamma）；24h vol ~$915,142; liq ~$196,094；resolvesAt=預期頒獎窗 2026-10-27T03:59:00Z；Other 備援 12/31 僅 trap",
       "resolvesAt": "2026-10-27T03:59:00Z",
-      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by December 31, 2026, 11:59 PM ET → Other.",
       "resolvedBy": "UMA"
     },
     {
@@ -51,7 +51,7 @@
       "trap": "粉絲盤噪音大；流動性薄時滑點吃 EV。真實結算＝2026-10-26 倫敦頒獎；resolvesAt=頒獎日終 ET。12/31→Other 僅備援，勿當 resolvesAt。",
       "note": "24h vol ~$550,588; liq ~$90,104；resolvesAt=預期頒獎窗 2026-10-27T03:59:00Z；Other 備援 12/31 僅 trap",
       "resolvesAt": "2026-10-27T03:59:00Z",
-      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by December 31, 2026, 11:59 PM ET → Other.",
       "resolvedBy": "UMA"
     },
     {
