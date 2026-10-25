@@ -98,13 +98,30 @@
       }
       return s.length > 10 ? s.slice(0, 10) : s;
     }
+    function isPastResolves(v) {
+      if (!v) return false;
+      const d = new Date(v);
+      if (isNaN(d.getTime())) return false;
+      const end = new Date(d);
+      end.setHours(23, 59, 59, 999);
+      return end.getTime() < Date.now();
+    }
     function settlement(m) {
       const parts = [];
-      if (m.resolvesAt) parts.push('截止 ' + fmtResolves(m.resolvesAt));
+      if (m.resolvesAt) {
+        const day = fmtResolves(m.resolvesAt);
+        if (isPastResolves(m.resolvesAt)) {
+          parts.push('API endDate 已過／市場仍開 ' + day);
+        } else {
+          parts.push('截止 ' + day);
+        }
+      }
       if (m.resolutionMethod) parts.push('方式 ' + m.resolutionMethod);
       if (m.resolvedBy) parts.push('裁定 ' + m.resolvedBy);
       if (!parts.length) return '';
-      return '<p><strong>結算</strong>：' + parts.join(' · ') + '</p>';
+      const stale = m.resolvesAt && isPastResolves(m.resolvesAt);
+      const style = stale ? ' style="opacity:0.65"' : '';
+      return '<p' + style + '><strong>結算</strong>：' + parts.join(' · ') + '</p>';
     }
     function card(m) {
       const el = document.createElement('div');
