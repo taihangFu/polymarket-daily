@@ -86,11 +86,32 @@
       if (typeof p !== 'number') return '';
       return Math.round(p * 100) + '¢';
     }
+    function fmtResolves(v) {
+      if (!v) return '';
+      const s = String(v);
+      const d = new Date(s);
+      if (!isNaN(d.getTime())) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return y + '-' + m + '-' + day;
+      }
+      return s.length > 10 ? s.slice(0, 10) : s;
+    }
+    function settlement(m) {
+      const parts = [];
+      if (m.resolvesAt) parts.push('截止 ' + fmtResolves(m.resolvesAt));
+      if (m.resolutionMethod) parts.push('方式 ' + m.resolutionMethod);
+      if (m.resolvedBy) parts.push('裁定 ' + m.resolvedBy);
+      if (!parts.length) return '';
+      return '<p><strong>結算</strong>：' + parts.join(' · ') + '</p>';
+    }
     function card(m) {
       const el = document.createElement('div');
       el.className = 'card';
       const side = m.side ? String(m.side) : '';
       const note = m.note ? `<p>${m.note}</p>` : '';
+      const settle = settlement(m);
       const link = m.url
         ? `<a href="${m.url}" target="_blank" rel="noopener noreferrer">打開市場 →</a>`
         : '';
@@ -101,6 +122,7 @@
         <div class="price">${pct(m.price)} · ${side}</div>
         <p><strong>Edge</strong>：${m.edge || ''}</p>
         <p><strong>陷阱</strong>：${m.trap || ''}</p>
+        ${settle}
         ${note}
         <div style="margin-top:12px;text-align:right">${link}</div>
       `;
