@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 1.1,
   "date": "2026-10-25",
   "markets": [
     {
@@ -7,70 +7,91 @@
       "title": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
       "url": "https://polymarket.com/market/will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
       "side": "Yes",
-      "price": 0.7945,
-      "edge": "次輪政治流動最大腿；Yes~79% 與 Lula~21% 對偶，流動性兩邊都深，適合當巴西盤錨點而非盲目追漲。",
-      "trap": "看清是大選最終勝選，不是首輪；規則與時間窗以市場頁為準。",
-      "note": "24h vol ~$1.7M；liq ~$0.69M"
+      "price": 0.7985,
+      "edge": "次輪政治流動最大腿；Yes~80% 與 Lula 對偶，流動性兩邊都深，當巴西盤錨點而非盲目追漲。",
+      "trap": "API endDate 已過期、市場未關；真實結算＝大選最終結果日（含次輪），非此欄。勿把 resolvesAt=2026-10-05 當截止。",
+      "note": "24h vol ~$1,526,400; liq ~$814,501；resolvesAt 來自 gamma endDate（已過期仍 open）—顯示時必須標「非真實截止」",
+      "resolvesAt": "2026-10-05T03:59:00Z",
+      "resolutionMethod": "Resolves to listed candidate that wins 2026 Brazilian presidential election (includes second round). Source: consensus of credible reporting.",
+      "resolvedBy": "credible consensus"
     },
     {
       "kind": "hot",
       "title": "Will Harry Kane win the 2026 Ballon d'Or?",
       "url": "https://polymarket.com/market/will-harry-kane-win-the-2026-ballon-dor",
       "side": "Yes",
-      "price": 0.7035,
+      "price": 0.7025,
       "edge": "Kane 仍是定價錨(~70%)；相對 Mbappé/Yamal 結構，主要風險是敘事切換而非流動性。",
-      "trap": "多結果市場，邊加總≠1 時有套利/摩擦；留意獎項規則與賽季截止。",
-      "note": "24h vol ~$435k；liq ~$149k"
+      "trap": "多結果市場，邊加總≠1 時有套利/摩擦；留意獎項規則與賽季截止。 API endDate 近 48h 但獎項未頒；勿解讀成兩天內結算。",
+      "note": "24h vol ~$449,881; liq ~$141,683；API endDate≈10/27 不可當真實頒獎日（Ballon 實際更晚）—結算以官方得獎公布為準",
+      "resolvesAt": "2026-10-27T03:59:00Z",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolvedBy": "UMA"
     },
     {
       "kind": "hot",
       "title": "Will Kylian Mbappé win the 2026 Ballon d'Or?",
       "url": "https://polymarket.com/market/will-kylian-mbapp-win-the-2026-ballon-dor",
       "side": "Yes",
-      "price": 0.169,
-      "edge": "價~17% 已高於 Yamal~13%，且 24h 量常是 Ballon 腿最大；X 粉絲敘事分裂＝波動源，適合當相對價值而非單邊信仰。",
-      "trap": "熱度≠得獎概率；別用社群聲量直接當 fair value。",
-      "note": "price=mid of bestBid 0.166 / bestAsk 0.172（gamma）；24h vol ~$909k"
+      "price": 0.1685,
+      "edge": "價~17% 已高於 Yamal~13%，24h 量常是 Ballon 腿最大；X 粉絲敘事分裂＝波動源，適合相對價值而非單邊信仰。",
+      "trap": "熱度≠得獎概率；別用社群聲量直接當 fair value。 API endDate 近 48h 但獎項未頒；勿解讀成兩天內結算。",
+      "note": "price=mid of bestBid 0.166 / bestAsk 0.171（gamma）；24h vol ~$915,142; liq ~$196,094；API endDate≈10/27 不可當真實頒獎日（Ballon 實際更晚）—結算以官方得獎公布為準",
+      "resolvesAt": "2026-10-27T03:59:00Z",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolvedBy": "UMA"
     },
     {
       "kind": "hot",
       "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
       "url": "https://polymarket.com/market/will-lamine-yamal-win-the-2026-ballon-dor",
       "side": "Yes",
-      "price": 0.128,
+      "price": 0.1265,
       "edge": "與 Mbappé 同事件相對價值腿：敘事熱但定價更低；做相對而非單押。",
-      "trap": "粉絲盤噪音大；流動性薄於熱門腿時滑點吃 EV。",
-      "note": "相對價值腿；24h vol ~$533k；liq ~$116k"
+      "trap": "粉絲盤噪音大；流動性薄於熱門腿時滑點吃 EV。 API endDate 近 48h 但獎項未頒；勿解讀成兩天內結算。",
+      "note": "24h vol ~$550,588; liq ~$90,104；API endDate≈10/27 不可當真實頒獎日（Ballon 實際更晚）—結算以官方得獎公布為準",
+      "resolvesAt": "2026-10-27T03:59:00Z",
+      "resolutionMethod": "Resolves to winner of the 2026 Ballon d'Or; if none declared by market end → No.",
+      "resolvedBy": "UMA"
     },
     {
       "kind": "hot",
       "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
       "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
       "side": "Yes",
-      "price": 0.945,
-      "edge": "Hold ~94.5% 是宏觀定價核心；升息 25bps 腿僅~4.5%。倉位應服務校準，不是賭驚喜。",
+      "price": 0.955,
+      "edge": "Hold ~95.5% 是宏觀定價核心；升息 25bps 腿僅~4.5%。倉位服務校準，不是賭驚喜。",
       "trap": "「meeting」決議口徑與未來指引不同；別把發言當成加息。",
-      "note": "liq ~$2.1M；升息腿另見 cold"
+      "note": "24h vol ~$605,883; liq ~$2,213,721",
+      "resolvesAt": "2026-10-29T03:59:00Z",
+      "resolutionMethod": "Resolves on upper bound of target federal funds range after the Oct 2026 FOMC meeting (0 bps change = Yes).",
+      "resolvedBy": "UMA"
     },
     {
       "kind": "hot",
       "title": "2026 Balance of Power: D Senate, D House",
       "url": "https://polymarket.com/market/2026-balance-of-power-d-senate-d-house-949",
       "side": "Yes",
-      "price": 0.655,
-      "edge": "BoP 四格盤流動極深；D+D ~65.5% 是中期結構錨。用四格聯合概率校準，勿只看單一國會盤。",
+      "price": 0.665,
+      "edge": "BoP 四格盤流動極深；D+D ~66.5% 是中期結構錨。用四格聯合概率校準，勿只看單一國會盤。",
       "trap": "四結果互斥；加總偏離 1 時先查是否同一 event 時間戳。",
-      "note": "liq ~$4.3M"
+      "note": "24h vol ~$130,012; liq ~$3,582,595",
+      "resolvesAt": "2026-11-04T04:59:00Z",
+      "resolutionMethod": "Resolves to party controlling US Senate AND party controlling US House after 2026 midterms (D Senate + D House).",
+      "resolvedBy": "UMA"
     },
     {
       "kind": "cold",
       "title": "Will the U.S. invade Iran before 2027?",
       "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027",
       "side": "Yes",
-      "price": 0.2,
-      "edge": "~20% 定的是「軍事進攻以建立控制」口徑；常被跟短到期停火／空襲盤混談，規則不對稱才是資訊差。",
-      "trap": "要建立控制意圖的進攻才算 Yes；空襲本身不夠。來源是 credible consensus。",
-      "note": "liq ~$308k"
+      "price": 0.195,
+      "edge": "~19.5% 定的是「軍事進攻以建立控制」口徑；常被跟短到期停火／空襲盤混談，規則不對稱才是資訊差。",
+      "trap": "要建立控制意圖的進攻才算 Yes；空襲本身不夠。",
+      "note": "24h vol ~$203,672; liq ~$307,609",
+      "resolvesAt": "2027-01-01T04:59:00Z",
+      "resolutionMethod": "Yes if US commences military offensive intended to establish control over any portion of Iran by 2026-12-31 23:59 ET; airstrikes alone insufficient. Source: consensus of credible reporting.",
+      "resolvedBy": "credible consensus"
     },
     {
       "kind": "cold",
@@ -80,7 +101,10 @@
       "price": 0.045,
       "edge": "左尾保險定價~4.5%；只在你對 hold 校準明顯偏高、或要對沖意外 hawkish 時才有 EV。",
       "trap": "低價≠免費；多數時間歸零。倉位上限要硬。",
-      "note": "liq ~$1.6M；與 hold 盤對偶"
+      "note": "24h vol ~$527,398; liq ~$1,554,629",
+      "resolvesAt": "2026-10-29T03:59:00Z",
+      "resolutionMethod": "Resolves on upper bound of target federal funds range after the Oct 2026 FOMC meeting (+25 bps = Yes).",
+      "resolvedBy": "UMA"
     }
   ]
 }
