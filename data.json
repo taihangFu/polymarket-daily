@@ -1,5 +1,86 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "markets": []
+  "markets": [
+    {
+      "kind": "hot",
+      "title": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
+      "url": "https://polymarket.com/market/will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
+      "side": "Yes",
+      "price": 0.7945,
+      "edge": "次輪政治流動最大腿；Yes~79% 與 Lula~21% 對偶，流動性兩邊都深，適合當巴西盤錨點而非盲目追漲。",
+      "trap": "看清是大選最終勝選，不是首輪；規則與時間窗以市場頁為準。",
+      "note": "24h vol ~$1.7M；liq ~$0.69M"
+    },
+    {
+      "kind": "hot",
+      "title": "Will Harry Kane win the 2026 Ballon d'Or?",
+      "url": "https://polymarket.com/market/will-harry-kane-win-the-2026-ballon-dor",
+      "side": "Yes",
+      "price": 0.7035,
+      "edge": "Kane 仍是定價錨(~70%)；相對 Mbappé/Yamal 結構，主要風險是敘事切換而非流動性。",
+      "trap": "多結果市場，邊加總≠1 時有套利/摩擦；留意獎項規則與賽季截止。",
+      "note": "24h vol ~$435k；liq ~$149k"
+    },
+    {
+      "kind": "hot",
+      "title": "Will Kylian Mbappé win the 2026 Ballon d'Or?",
+      "url": "https://polymarket.com/market/will-kylian-mbapp-win-the-2026-ballon-dor",
+      "side": "Yes",
+      "price": 0.169,
+      "edge": "價~17% 已高於 Yamal~13%，且 24h 量常是 Ballon 腿最大；X 粉絲敘事分裂＝波動源，適合當相對價值而非單邊信仰。",
+      "trap": "熱度≠得獎概率；別用社群聲量直接當 fair value。",
+      "note": "price=mid of bestBid 0.166 / bestAsk 0.172（gamma）；24h vol ~$909k"
+    },
+    {
+      "kind": "hot",
+      "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+      "url": "https://polymarket.com/market/will-lamine-yamal-win-the-2026-ballon-dor",
+      "side": "Yes",
+      "price": 0.128,
+      "edge": "與 Mbappé 同事件相對價值腿：敘事熱但定價更低；做相對而非單押。",
+      "trap": "粉絲盤噪音大；流動性薄於熱門腿時滑點吃 EV。",
+      "note": "相對價值腿；24h vol ~$533k；liq ~$116k"
+    },
+    {
+      "kind": "hot",
+      "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+      "side": "Yes",
+      "price": 0.945,
+      "edge": "Hold ~94.5% 是宏觀定價核心；升息 25bps 腿僅~4.5%。倉位應服務校準，不是賭驚喜。",
+      "trap": "「meeting」決議口徑與未來指引不同；別把發言當成加息。",
+      "note": "liq ~$2.1M；升息腿另見 cold"
+    },
+    {
+      "kind": "hot",
+      "title": "2026 Balance of Power: D Senate, D House",
+      "url": "https://polymarket.com/market/2026-balance-of-power-d-senate-d-house-949",
+      "side": "Yes",
+      "price": 0.655,
+      "edge": "BoP 四格盤流動極深；D+D ~65.5% 是中期結構錨。用四格聯合概率校準，勿只看單一國會盤。",
+      "trap": "四結果互斥；加總偏離 1 時先查是否同一 event 時間戳。",
+      "note": "liq ~$4.3M"
+    },
+    {
+      "kind": "cold",
+      "title": "Will the U.S. invade Iran before 2027?",
+      "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027",
+      "side": "Yes",
+      "price": 0.2,
+      "edge": "~20% 定的是「軍事進攻以建立控制」口徑；常被跟短到期停火／空襲盤混談，規則不對稱才是資訊差。",
+      "trap": "要建立控制意圖的進攻才算 Yes；空襲本身不夠。來源是 credible consensus。",
+      "note": "liq ~$308k"
+    },
+    {
+      "kind": "cold",
+      "title": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+      "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032",
+      "side": "Yes",
+      "price": 0.045,
+      "edge": "左尾保險定價~4.5%；只在你對 hold 校準明顯偏高、或要對沖意外 hawkish 時才有 EV。",
+      "trap": "低價≠免費；多數時間歸零。倉位上限要硬。",
+      "note": "liq ~$1.6M；與 hold 盤對偶"
+    }
+  ]
 }
